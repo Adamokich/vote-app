@@ -1,0 +1,14 @@
+:root {
+    --color-light: #fff;
+    --color-dark-accent: #191919;
+    --color-dark: #292929;
+    --color-gray: #808080;
+    --color-gray-light: #757575;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: var(--color-dark-accent);
+}

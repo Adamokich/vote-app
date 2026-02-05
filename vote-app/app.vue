@@ -1,6 +1,9 @@
+<script setup lang="ts">
+import '../vote-app/assets/main.css'
+</script>
+
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <NuxtPage/>
   </div>
 </template>
