@@ -1,17 +1,28 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app';
 
+definePageMeta({
+    layout: 'default'
+})
+
 const {error} = defineProps<{error: NuxtError}>();
+const router = useRouter();
+
+function goToHome() {
+    router.push({path: '/'});
+}
 </script>
 
 <template>
-    <div class="error">
-        <div class="error-wrapper">
-            <h1 class="error-code">{{ error.status }}</h1>
-            <div v-if="error.status === 404" class="error-message">Страница не найдена, вернитесь на главную страницу</div>
+    <NuxtLayout name="default">
+        <div class="error">
+            <div class="error-wrapper">
+                <h1 class="error-code">{{ error.status }}</h1>
+                <div v-if="error.status === 404" class="error-message">Страница не найдена, вернитесь на главную страницу</div>
+            </div>
+            <MainButton class="error-button" @click="goToHome()">На главную</MainButton>
         </div>
-        <MainButton class="error-button">На главную</MainButton>
-    </div>
+    </NuxtLayout>
 </template>
 
 <style scoped>

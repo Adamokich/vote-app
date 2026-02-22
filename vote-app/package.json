@@ -15,6 +15,7 @@
     "@nuxt/scripts": "^0.13.2",
     "@unhead/vue": "^2.1.2",
     "eslint": "^9.39.2",
+    "module": "^2.0.0",
     "nuxt": "^3.21.0",
     "vue": "^3.5.27",
     "vue-router": "^4.6.4"

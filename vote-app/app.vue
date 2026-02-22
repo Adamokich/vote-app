@@ -4,6 +4,8 @@ import '../vote-app/assets/main.css'
 
 <template>
   <div>
-    <NuxtPage/>
+    <NuxtLayout>
+      <NuxtPage/>
+    </NuxtLayout>
   </div>
 </template>
