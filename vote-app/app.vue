@@ -5,7 +5,19 @@ import '../vote-app/assets/main.css'
 <template>
   <div>
     <NuxtLayout>
-      <NuxtPage/>
+      <NuxtPage />
     </NuxtLayout>
   </div>
 </template>
+
+<style scoped>
+.page-enter-active,
+.page-leave-active {
+  transition: all .2s;
+}
+
+.page-enter-active-from,
+.page-leave-to {
+  opacity: 0;
+}
+</style>

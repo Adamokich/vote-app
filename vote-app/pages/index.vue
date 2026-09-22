@@ -1,3 +1,6 @@
 <template>
-    <h1>Index</h1>
+    <div>
+        <h1>Index</h1>
+        <VoteCard/>
+    </div>
 </template>
